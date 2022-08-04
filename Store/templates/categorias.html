@@ -7,7 +7,7 @@
     <title>Categorias</title>
 </head>
 <body>
-    <h1>Categorias</h1>
+    <h1>Categorias do Departamento {{ departamento.nome }}</h1>
     <ul>
         {% for categ in categorias %}
         <li><a href="/produtos/{{ categ.id }}">{{ categ.nome }}</a></li>
