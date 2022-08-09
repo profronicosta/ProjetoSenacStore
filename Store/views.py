@@ -14,12 +14,6 @@ def index(request):
         }
     return render(request, 'index.html', context)
 
-def teste(request):
-    # depto = ['Casa', 'Informática', 'Telefonia', 'Games']
-    depto = Departamento.objects.all()
-    context = {'departamentos': depto}
-    return render(request, 'teste.html', context)
-
 def departamentos(request):
     depto = Departamento.objects.all()
     context = {'departamentos': depto}
