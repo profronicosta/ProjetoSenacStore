@@ -44,3 +44,10 @@ def produtos(request, id):
                 'categoria' : categoria
             }
     return render(request, 'produtos.html', context)
+
+def produto_detalhe(request, id):
+    produto = Produto.objects.get(id = id)
+    context = {
+                'produto': produto
+              }
+    return render(request, 'produto_detalhe.html', context)
