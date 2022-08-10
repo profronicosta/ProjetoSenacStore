@@ -9,14 +9,9 @@
     <link rel="stylesheet" type="text/css" href="{% static '/css/estilos.css' %}">
 </head>
 <body>
-    <div id="topo">
-        <img src="{% static '/img/logo_senac.jpg' %}" width="150">
-        <ul>
-            <li>Departamentos</li>
-            <li>Contato</li>
-            <li>Sobre a Empresa</li>
-        </ul>
-    </div>
+
+    {% include 'includes/topo.html'  %}
+    
     <h1>Senac Store</h1>
     <ul>
         {% for depto in departamentos  %}
